@@ -46,14 +46,92 @@ img {
   color: #464646;
 }
 .social a:hover{
-  background: aqua;
+ color: #000;
 }
 .fa-arrow-up {
   transform: rotate(45deg);
   margin-left: 1em;
 }
+.container_about{
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  background: #EAF2FD;
+}
+.about{
+  margin-left: 10%;
+  width: 60%;
+  padding: 5em 0;
+  color: #464646;
+}
+.about h1{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
 
+}
+.about p{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1em 0;
+}
 
+/*Container_sKILLS
+
+ */
+
+.container_skills{
+  width: 100%;
+  height: auto;
+  background: #F5F5F5;
+}
+.icons_skills{
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows:15rem ;
+  grid-template-columns: repeat(auto-fill,minmax(11rem,2fr));
+}
+.skills_s{
+  width: 100%;
+  text-align:center ;
+}
+.card{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+
+}
+.skills_s h1{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #464646;
+  padding: 1em 0;
+}
+.card i{
+ color: #2A7AE4;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+
+}
+.card span{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
 /*
 .typing {
   width: 11em;
