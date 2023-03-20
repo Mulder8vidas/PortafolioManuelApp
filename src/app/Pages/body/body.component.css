@@ -6,10 +6,7 @@
 .Who {
   padding-top: 2em;
   width: 75%;
-  font-family: 'Raleway', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  font: 700 32px 'Raleway', serif;
 }
 
 .img-who {
@@ -20,14 +17,14 @@
 img {
   height: auto;
 }
+
 .txt {
   width: 11em;
   white-space: nowrap;
   overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-
+  font: 2em monospace;
 }
+
 .description p{
   font-family: 'Raleway', serif;
   font-style: normal;
@@ -36,77 +33,58 @@ img {
   line-height: 26px;
   color: #464646;
   margin: 1em 0;
-}
-.social{
-  font-family: 'Raleway', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #464646;
-}
-.social a:hover{
- color: #000;
+}.social {
+   font: 500 16px/19px 'Raleway', serif;
+   color: #464646;
+ }
+.social a:hover {
+  color: #000;
 }
 .fa-arrow-up {
   transform: rotate(45deg);
   margin-left: 1em;
 }
-.container_about{
+.container_about {
   width: 100%;
-  height: auto;
   min-height: 350px;
+  height: auto;
   background: #EAF2FD;
 }
-.about{
+.about {
   margin-left: 10%;
   width: 60%;
   padding: 5em 0;
   color: #464646;
 }
-.about h1{
-  font-family: 'Raleway', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-
+.about h1 {
+  font: 700 32px/38px 'Raleway', serif;
 }
-.about p{
-  font-family: 'Raleway', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+.about p {
+  font: 400 16px/19px 'Raleway', serif;
   padding: 1em 0;
 }
 
-/*Container_sKILLS
-
- */
-
-.container_skills{
-  width: 100%;
-  height: auto;
+.container_skills {
   background: #F5F5F5;
 }
-.icons_skills{
-  width: 80%;
-  margin-left: 10%;
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows:15rem ;
-  grid-template-columns: repeat(auto-fill,minmax(11rem,2fr));
-}
-.skills_s{
-  width: 100%;
-  text-align:center ;
-}
-.card{
-  width: 150px;
-  height: 150px;
-  background: #fff;
 
+.icons_skills {
+  display: grid;
+  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 2fr));
+  gap: 1rem;
+  margin: 0 10%;
+  width: 80%;
+}
+
+.skills_s {
+  text-align: center;
+  width: 100%;
+}
+.card {
+  background: #fff;
+  height: 150px;
+  width: 150px;
 }
 .skills_s h1{
   font-family: 'Raleway', serif;
@@ -118,7 +96,7 @@ img {
   padding: 1em 0;
 }
 .card i{
- color: #2A7AE4;
+  color: #2A7AE4;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -133,11 +111,6 @@ img {
   line-height: 19px;
 }
 
-
-/*experiencia-container*/
-
-
-
 .container_experience{
   width: 100%;
   background: #EAF2FD;
@@ -146,7 +119,6 @@ img {
 .experience_box{
   width: 80%;
   margin-left: 10%;
-
 }
 .txt-web {
   display: flex;
@@ -155,11 +127,10 @@ img {
   align-items: flex-start;
   text-align: center;
 }
-.btn1,
-.btn2 {
+.btn1, .btn2 {
   width: 100px;
   height: 50px;
-  border: 2px solid #2A7AE4;;
+  border: 2px solid #2A7AE4;
   border-radius: 2px;
   font-family: 'Raleway', serif;
   font-style: normal;
@@ -204,28 +175,6 @@ img {
   color: #464646;
   margin-top: .5em;
 }
-/*
-.typing {
-  width: 11em;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}*/
 .contenedor {
   position: relative;
   display: inline-block;
@@ -262,7 +211,6 @@ img {
 .contenedor:hover .superposicion {
   opacity: 1; /* Mostrar la superposición al hacer hover en el contenedor */
 }
-
 .superposicion button {
   background-color: #2A7AE4; /* Color de fondo del botón */
   color: #fff ; /* Color de texto del botón */
@@ -272,9 +220,6 @@ img {
   font-size: 16px;
   position: relative;
   overflow: hidden;
-
-
-
 }
 .superposicion >button::before {
   content: "";
@@ -301,10 +246,6 @@ img {
   color: #464646;
   padding-top: 1em;
 }
-
-
-/*
-contact-user*/
 
 .contact-container{
   width: 100%;
