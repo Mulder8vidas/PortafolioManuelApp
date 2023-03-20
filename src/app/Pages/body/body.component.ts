@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-
+  openPdf() {
+    window.open("./assets/CVPDF.pdf", "_blank");
+  }
   constructor() { }
 
   ngOnInit(): void {
