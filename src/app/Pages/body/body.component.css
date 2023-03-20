@@ -132,6 +132,78 @@ img {
   font-size: 16px;
   line-height: 19px;
 }
+
+
+/*experiencia-container*/
+
+
+
+.container_experience{
+  width: 100%;
+  background: #EAF2FD;
+  height: auto;
+}
+.experience_box{
+  width: 80%;
+  margin-left: 10%;
+
+}
+.txt-web {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.btn1,
+.btn2 {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #2A7AE4;;
+  border-radius: 2px;
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: .5em;
+}
+.btn1 {
+  color: #2A7AE4;
+  background-color: white;
+}
+
+.btn2 {
+  color: white;
+  background-color: #2A7AE4;
+}
+
+.btn1:hover{
+  background: #eeeded;
+}
+.btn2:hover{
+  background: #4b7fc4;
+}
+
+.txt-web >h1{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #464646;
+  margin-top: .5em;
+}
+.txt-web >h2{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+  margin-top: .5em;
+}
 /*
 .typing {
   width: 11em;
@@ -154,3 +226,165 @@ img {
     border-color: transparent
   }
 }*/
+.contenedor {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor img {
+  height: auto;
+  display: block;
+}
+
+.superposicion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(35, 34, 34);
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.superposicion h1{
+  color :#2A7AE4;
+  font-size: 30px;
+
+}
+.superposicion h2{
+  color : #797979;
+  margin: 1em 0;
+}
+
+.contenedor:hover .superposicion {
+  opacity: 1; /* Mostrar la superposición al hacer hover en el contenedor */
+}
+
+.superposicion button {
+  background-color: #2A7AE4; /* Color de fondo del botón */
+  color: #fff ; /* Color de texto del botón */
+  padding: .8rem 3rem; /* Espacio interior del botón */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+
+
+
+}
+.superposicion >button::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(107, 164, 239, 0.5);
+  top: 0;
+  left: 150%;
+  width:100%;
+  height: 100%;
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease-out;
+}
+
+.superposicion button:hover::before {
+  transform: skewX(0deg);
+  left: 0;
+}
+.container_experience h1{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #464646;
+  padding-top: 1em;
+}
+
+
+/*
+contact-user*/
+
+.contact-container{
+  width: 100%;
+  background: #F5F5F5;
+}
+.contact-box {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 1em;
+}
+.contact-form h1 {
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 38px;
+  padding-top: 1em;
+  color: #464646;
+}
+.contact-form h2{
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+.form-control {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.box-form{
+  margin-top: 2rem;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label, textarea:focus + label, textarea:not(:placeholder-shown) + label {
+  top: -1.5rem;
+  font-size: 0.9rem;
+  color: #2A7AE4;
+}
+
+input, textarea {
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-bottom: 2px solid #2A7AE4;
+}
+
+textarea {
+  resize: none;
+  height: 5rem;
+}
+.btn-enviar {
+  display: block;
+  margin: 1rem auto 0;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2A7AE4;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn-enviar:hover {
+  background-color: #1F5BBF;
+}
+
