@@ -6,3 +6,28 @@
   color: #464646;
 }
 
+@media (max-width: 1050px) {
+  .nav-res{
+    display: none;
+  }
+  header{
+    padding-left: 10%;
+  }
+}
+@media (max-width: 400px) {
+  header{
+    padding-left: 10%;
+  }
+  .txt-email{
+    font-size:14px ;
+  }
+  .sma{
+    display: flex;
+    justify-content: space-between;
+    width:330px;
+  }
+  .social a{
+    font-size: 12px;
+  }
+
+}
