@@ -440,3 +440,57 @@ textarea {
    }
 }
 
+
+@media(max-width: 450px){
+  .icons_skills{
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  }
+}
+
+@media (max-width: 395px) {
+  .txt {
+    width: 10.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    font: 1em monospace;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img-who img{
+    margin: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  .img-who {
+    width: 50%;
+    clip-path: circle(45%);
+  }
+  .container{
+    margin-top: 0;
+  }
+  .Who{
+    padding-top: 0;
+    width: 100%;
+  }
+  .social {
+    font: 500 11.5px/19px 'Raleway', serif;
+    color: #464646;
+  }
+  .about{
+    width: 80%;
+  }
+  .icons_skills{
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+  }
+  .superposicion{
+    display: none;
+  }
+  .container_experience h1{
+    font-size: 20px;
+
+  }
+}
+

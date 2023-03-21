@@ -10,7 +10,7 @@ export class BodyComponent implements OnInit {
     window.open("./assets/CVPDF.pdf", "_blank");
   }
   goToSite() {
-    window.open('https://portafolio-manuel-app.vercel.app/', '_blank');
+    window.open('https://encriptador-alura-beta.vercel.app/', '_blank');
   }
   constructor() { }
 
