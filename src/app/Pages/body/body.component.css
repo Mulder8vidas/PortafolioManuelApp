@@ -393,7 +393,7 @@ textarea {
   }
 
 }
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
   .txt {
     width: 10.5em;
     white-space: nowrap;
