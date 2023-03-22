@@ -13,8 +13,13 @@
   header{
     padding-left: 10%;
   }
+  .sma{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   header{
     padding-left: 10%;
   }
@@ -24,7 +29,7 @@
   .sma{
     display: flex;
     justify-content: space-between;
-    width:330px;
+    width: 80vw;
   }
   .social a{
     font-size: 12px;
